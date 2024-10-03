@@ -4,6 +4,7 @@ from zenml.client import Client
 import os, sys
 import pandas as pd
 client = Client()
+from typing import Tuple
 sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 
 from steps.data_split_ml_steps import (step_model_evaluation_r2,
@@ -16,7 +17,7 @@ from steps.data_split_ml_steps import (step_model_evaluation_r2,
                                        train_test_split)
 
 @pipeline(enable_cache=False, name='Machine Learning')
-def machine_learning_pipeline(data:pd.DataFrame, model_name:str):
+def machine_learning_pipeline(data:pd.DataFrame, model_name:str)->Tuple[float, float]:
     x, y = step_xy_split(data)
     x_train, x_test, y_train, y_test = step_train_test_splitter(x, y)
     model = step_model_selection(model_name=model_name)
