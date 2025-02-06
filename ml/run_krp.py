@@ -17,7 +17,7 @@ def main_pipeline_php(path:str = '../data/'):
     # with help of the experimental metal table selecting/filtering data, combining, and cleaning
     database_generation = database_generation_pipeline(dir_path=path, 
                                                        database=data_ingestion, 
-                                                       filename='meta_table_data_5_1.csv')
+                                                       filename='meta_table_data_5_5.csv')
 
     # auto generation of plots for selected thermal properties using PyPulseHeatPipe
     auto_eda = auto_eda_plots(dir_path=path, 

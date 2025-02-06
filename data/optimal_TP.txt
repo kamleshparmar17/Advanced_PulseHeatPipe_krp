@@ -2,46 +2,70 @@
 
 --- Optimal Temperature and Pressure ---
 
- FR(60)-Q(40)-A(90)-B(90)
+ FR(60)-Q(80)-A(90)-B(0)
 
--FR		 Optimal:		  60.0 ± 0.0		 [%]
-Q		 Optimal:		  40.0 ± 0.0		 [W]
-Te_mean		 Optimal:		  82.64 ± 0.0		 [C]
-Tc_mean		 Optimal:		  31.98 ± 0.0		 [C]
-Te_std		 Optimal:		  0.34 ± 0.0		 [C]
-Tc_std		 Optimal:		  1.25 ± 0.0		 [C]
-P		 Optimal:		  0.53 ± 0.0		 [bar]
-Te_mean		 Optimal:		  355.79 ± 0.0		 [K]
-Tc_mean		 Optimal:		  305.12 ± 0.0		 [K]
-Te_std		 Optimal:		  273.49 ± 0.0		 [K]
-Tc_std		 Optimal:		  274.4 ± 0.0		 [K]
-T_pulse		 Optimal:		  353.93 ± 0.0		 [K]
-TR		 Optimal:		  1.27 ± 0.0		 [K/W]
-GFE_Te		 Optimal:		  -1899.5 ± 0.0		 [KJ/mol]
-GFE_Tc		 Optimal:		  -1629.01 ± 0.0		 [KJ/mol]
-dG		 Optimal:		  -270.49 ± 0.0		 [KJ/mol]
+-FR		 Optimal:		  60.0 ± 0		 [%]
+Q		 Optimal:		  80.0 ± 0		 [W]
+Te_mean		 Optimal:		  72.5 ± 0		 [C]
+Tc_mean		 Optimal:		  28.48 ± 0		 [C]
+Te_std		 Optimal:		  0.4 ± 0		 [C]
+Tc_std		 Optimal:		  1.26 ± 0		 [C]
+P		 Optimal:		  0.67 ± 0		 [bar]
+Te_mean		 Optimal:		  345.65 ± 0		 [K]
+Tc_mean		 Optimal:		  301.62 ± 0		 [K]
+Te_std		 Optimal:		  273.55 ± 0		 [K]
+Tc_std		 Optimal:		  274.41 ± 0		 [K]
+T_pulse		 Optimal:		  0.0 ± 0		 [K]
+TR		 Optimal:		  0.55 ± 0		 [K/W]
+GFE_Te		 Optimal:		  -1175.15 ± 0		 [KJ/mol]
+GFE_Tc		 Optimal:		  -1025.47 ± 0		 [KJ/mol]
+dG		 Optimal:		  -149.68 ± 0		 [KJ/mol]
 
 
 
 
 --- Optimal Temperature and Pressure ---
 
- FR(60)-Q(60)-A(90)-B(90)
+ FR(60)-Q(100)-A(90)-B(0)
 
 -FR		 Optimal:		  60.0 ± 0.0		 [%]
-Q		 Optimal:		  60.0 ± 0.0		 [W]
-Te_mean		 Optimal:		  94.8 ± 0.0		 [C]
-Tc_mean		 Optimal:		  35.33 ± 0.0		 [C]
-Te_std		 Optimal:		  0.71 ± 0.0		 [C]
-Tc_std		 Optimal:		  3.085 ± 0.03535533905932725		 [C]
-P		 Optimal:		  0.68 ± 0.0		 [bar]
-Te_mean		 Optimal:		  367.95 ± 0.0		 [K]
-Tc_mean		 Optimal:		  308.47 ± 0.0		 [K]
-Te_std		 Optimal:		  273.86 ± 0.0		 [K]
-Tc_std		 Optimal:		  276.235 ± 0.03535533905933541		 [K]
-T_pulse		 Optimal:		  0.0 ± 0.0		 [K]
-TR		 Optimal:		  0.99 ± 0.0		 [K/W]
-GFE_Te		 Optimal:		  -1205.84 ± 0.0		 [KJ/mol]
-GFE_Tc		 Optimal:		  -1010.93 ± 0.0		 [KJ/mol]
-dG		 Optimal:		  -194.91 ± 0.0		 [KJ/mol]
+Q		 Optimal:		  100.0 ± 0.0		 [W]
+Te_mean		 Optimal:		  75.6 ± 0.0		 [C]
+Tc_mean		 Optimal:		  31.149999999999995 ± 4.351167857633658e-15		 [C]
+Te_std		 Optimal:		  0.62 ± 0.0		 [C]
+Tc_std		 Optimal:		  1.4400000000000002 ± 2.7194799110210365e-16		 [C]
+P		 Optimal:		  0.61 ± 0.0		 [bar]
+Te_mean		 Optimal:		  348.75 ± 0.0		 [K]
+Tc_mean		 Optimal:		  304.3 ± 0.0		 [K]
+Te_std		 Optimal:		  273.77 ± 0.0		 [K]
+Tc_std		 Optimal:		  274.59 ± 0.0		 [K]
+T_pulse		 Optimal:		  371.29 ± 0.0		 [K]
+TR		 Optimal:		  0.44 ± 0.0		 [K/W]
+GFE_Te		 Optimal:		  -1456.4399999999998 ± 2.7847474288855413e-13		 [KJ/mol]
+GFE_Tc		 Optimal:		  -1270.81 ± 0.0		 [KJ/mol]
+dG		 Optimal:		  -185.63 ± 0.0		 [KJ/mol]
+
+
+
+
+--- Optimal Temperature and Pressure ---
+
+ FR(60)-Q(120)-A(90)-B(0)
+
+-FR		 Optimal:		  60.0 ± 0		 [%]
+Q		 Optimal:		  120.0 ± 0		 [W]
+Te_mean		 Optimal:		  71.2 ± 0		 [C]
+Tc_mean		 Optimal:		  31.12 ± 0		 [C]
+Te_std		 Optimal:		  0.81 ± 0		 [C]
+Tc_std		 Optimal:		  1.36 ± 0		 [C]
+P		 Optimal:		  0.68 ± 0		 [bar]
+Te_mean		 Optimal:		  344.35 ± 0		 [K]
+Tc_mean		 Optimal:		  304.27 ± 0		 [K]
+Te_std		 Optimal:		  273.96 ± 0		 [K]
+Tc_std		 Optimal:		  274.51 ± 0		 [K]
+T_pulse		 Optimal:		  0.0 ± 0		 [K]
+TR		 Optimal:		  0.33 ± 0		 [K/W]
+GFE_Te		 Optimal:		  -1128.5 ± 0		 [KJ/mol]
+GFE_Tc		 Optimal:		  -997.17 ± 0		 [KJ/mol]
+dG		 Optimal:		  -131.33 ± 0		 [KJ/mol]
 
