@@ -1,0 +1,9 @@
+ML metrics
+-----------
+experiment name: trial
+date: 2025-01-05 15:15:20
+meta table: meta_table_data.csv
+ML model: rfr
+RMSE: <zenml.steps.entrypoint_function_utils.StepArtifact object at 0x309b53450>
+R2: <zenml.steps.entrypoint_function_utils.StepArtifact object at 0x309b510d0>
+description: trial jan 25
