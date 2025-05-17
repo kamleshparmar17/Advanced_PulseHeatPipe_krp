@@ -106,8 +106,8 @@ class DataProcessingEngine:
         frames = []
         for _, row in df_meta.iterrows():
             # Convert experiment start and stop timestamps to datetime objects
-            experiment_start = pd.to_datetime(row[col_start], format='%d/%m/%Y%H:%M:%S')
-            experiment_stop = pd.to_datetime(row[col_stop], format='%d/%m/%Y%H:%M:%S')
+            experiment_start = pd.to_datetime(row[col_start], format='%d-%m-%Y%H:%M:%S')
+            experiment_stop = pd.to_datetime(row[col_stop], format='%d-%m-%Y%H:%M:%S')
             
             # Try to find closest match by incrementally searching up to max_search_seconds
             found_start = False
