@@ -1,0 +1,3 @@
+experiment name,Date,t_start,t_pulse_start,t_end,WF,FR [%],Q [W],alpha,beta
+php,04-04-2024,16:32:36,16:39:10,17:35:00,DI water,60,120,90,0
+php,18-11-2024,14:29:11,14:42:30,14:59:30,DI water,60,120,0,0
