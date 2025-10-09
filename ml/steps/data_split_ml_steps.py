@@ -10,6 +10,11 @@ from sklearn.model_selection import train_test_split
 from sklearn.ensemble import RandomForestRegressor, AdaBoostRegressor
 
 @step
+def save_to_csv(data:pd.DataFrame, filename:str)->None:
+    data.to_csv(filename, index=False)
+    return None
+
+@step
 def step_xy_split(df:pd.DataFrame)->Tuple[Annotated[pd.DataFrame, 'x-features'], 
                                      Annotated[pd.Series, 'y-target TR[K/W]']]:
     y_true = df.pop('TR[K/W]')

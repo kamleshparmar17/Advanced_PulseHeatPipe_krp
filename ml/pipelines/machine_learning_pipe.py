@@ -14,18 +14,24 @@ from steps.data_split_ml_steps import (step_model_evaluation_r2,
                                        step_model_training,
                                        step_train_test_splitter,
                                        step_xy_split,
-                                       train_test_split)
+                                       train_test_split,
+                                       save_to_csv)
 
 @pipeline(enable_cache=False, name='Machine Learning')
 def machine_learning_pipeline(data:pd.DataFrame, model_name:str)->Tuple[float, float]:
     x, y = step_xy_split(data)
     x_train, x_test, y_train, y_test = step_train_test_splitter(x, y)
+    save_to_csv(data=x_train, filename='../data/ml_data/x_train.csv')
+    save_to_csv(data=x_test, filename='../data/ml_data/x_test.csv')
+    save_to_csv(data=y_train, filename='../data/ml_data/y_train.csv')
+    save_to_csv(data=y_test, filename='../data/ml_data/y_test.csv')
     model = step_model_selection(model_name=model_name)
     trained_model = step_model_training(model=model,
                                       x_train=x_train,
                                       y_train=y_train)
     predictions = step_model_prediction(model=trained_model,
                                         x_test=x_test)
+    save_to_csv(data=predictions, filename=f'../data/ml_data/predictions_{model_name}.csv')
     rmse = step_model_evaluation_rmse(y_pred=predictions,
                                       y_test=y_test)
     r2 = step_model_evaluation_r2(y_pred=predictions,
