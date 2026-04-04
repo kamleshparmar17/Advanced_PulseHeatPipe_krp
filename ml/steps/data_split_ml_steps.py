@@ -71,11 +71,9 @@ def step_model_evaluation_r2(y_pred:pd.Series, y_test:pd.Series)->Annotated[floa
 def step_model_evaluation_r2_adj(r2: float, data: pd.DataFrame) -> float:
     n = len(data)              # total samples
     p = data.shape[1] - 1      # features (exclude target)
-
     if n > p + 1:
         r2_adj = 1 - ((1 - r2) * (n - 1) / (n - p - 1))
     else:
         r2_adj = r2
-
     print(f"Adjusted R2: {r2_adj}")
     return r2_adj

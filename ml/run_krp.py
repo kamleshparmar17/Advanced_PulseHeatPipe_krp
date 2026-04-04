@@ -27,7 +27,7 @@ def main_pipeline_php(path:str = '../data/'):
     data_ml = data_preprocessing_pipeline(data_path='../data/database/database.csv',
                                           data=auto_eda)
 
-    # ML training and evaluation of ML model
+    # ML training and evaluation of ML model (For RFR => r2, rmse, r2_adj and ABR => r2_2, rmse_2, r2_adj_2)
     # random forest regressor
     rmse_rfr, r2_rfr, r2_adj_rfr = machine_learning_pipeline(data=data_ml, model_name='rfr')
     

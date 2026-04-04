@@ -33,35 +33,22 @@ def machine_learning_pipeline(data:pd.DataFrame, model_name:str)->Tuple[float, f
     
     model = step_model_selection(model_name=model_name)
     
-    trained_model = step_model_training(
-        model=model,
-        x_train=x_train,
-        y_train=y_train
-    )
+    trained_model = step_model_training(model=model,
+                                        x_train=x_train,
+                                        y_train=y_train)
     
-    predictions = step_model_prediction(
-        model=trained_model,
-        x_test=x_test
-    )
+    predictions = step_model_prediction(model=trained_model,
+                                        x_test=x_test)
+        
+    save_to_csv(data=predictions, filename=f'../data/ml_data/predictions_{model_name}.csv')
+        
+    rmse = step_model_evaluation_rmse(y_pred=predictions,
+                                        y_test=y_test)
+        
+    r2 = step_model_evaluation_r2(y_pred=predictions,
+                                    y_test=y_test)
     
-    save_to_csv(
-        data=predictions,
-        filename=f'../data/ml_data/predictions_{model_name}.csv'
-    )
-    
-    rmse = step_model_evaluation_rmse(
-        y_pred=predictions,
-        y_test=y_test
-    )
-    
-    r2 = step_model_evaluation_r2(
-        y_pred=predictions,
-        y_test=y_test
-    )
-
-    r2_adj = step_model_evaluation_r2_adj(
-        r2=r2,
-        data=data
-    )
+    r2_adj = step_model_evaluation_r2_adj(r2=r2,
+                                            data=data)
 
     return rmse, r2, r2_adj
